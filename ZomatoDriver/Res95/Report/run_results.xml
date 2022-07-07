@@ -1,0 +1,424 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Step">
+<Data>
+    <Name>SystemUtil.Run "chrome.exe",1</Name>
+    <StartTime>2022-07-05 13:34:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>f655d3ca7460463897e0d29224e5416e</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Browser.Navigate</Name>
+    <Description>Navigate to https://www.zomato.com/&lt;br&gt;Target Frame: _top&lt;br&gt;Post Data: &lt;br&gt;HTTP Headers: </Description>
+    <StartTime>2022-07-05 13:35:04</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Browser]]></Name>
+          </Object>
+        </Path>
+        <Operation>Navigate</Operation>
+        <OperationData><![CDATA[Navigate to https://www.zomato.com/<br>Target Frame: _top<br>Post Data: <br>HTTP Headers: ]]></OperationData>
+      </TestObject>
+      <IconKey>6b9e3145ac3240cf9c9238c2c12d593d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Browser</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Local Browser&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2022-07-05 13:35:04</StartTime>
+    <Duration>7</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Browser]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>6b9e3145ac3240cf9c9238c2c12d593d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Popular restaurant types.Click</Name>
+    <Description />
+    <StartTime>2022-07-05 13:35:11</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>WebButton</Type>
+            <Name><![CDATA[Popular restaurant types]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[type]]></Name>
+            <Value><![CDATA[]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[name]]></Name>
+            <Value><![CDATA[Popular restaurant types near mechevron-down]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[DIV]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>2fa8cc0e88b2428984b8f5c7eaf082ea</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Food Courts near me.Click</Name>
+    <Description />
+    <StartTime>2022-07-05 13:35:11</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Link</Type>
+            <Name><![CDATA[Food Courts near me]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Food Courts near me]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[A]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>f201358572b14c6e8f30e9d20f57fe78</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Zomato</Name>
+    <Description>Page</Description>
+    <StartTime>2022-07-05 13:35:11</StartTime>
+    <Duration>4</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Page]]></OperationData>
+      </TestObject>
+      <IconKey>12f16242280b4bf190cc349e76db746c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Movie Tickets, Plays,</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Local Browser&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2022-07-05 13:35:11</StartTime>
+    <Duration>4</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>6b9e3145ac3240cf9c9238c2c12d593d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>navbar</Name>
+    <ErrorText>Cannot identify the specified item of the navbar object. Confirm that the specified item is included in the object's item collection.</ErrorText>
+    <Description>Cannot&amp;nbsp;identify&amp;nbsp;the&amp;nbsp;specified&amp;nbsp;item&amp;nbsp;of&amp;nbsp;the&amp;nbsp;navbar&amp;nbsp;object.&amp;nbsp;Confirm&amp;nbsp;that&amp;nbsp;the&amp;nbsp;specified&amp;nbsp;item&amp;nbsp;is&amp;nbsp;included&amp;nbsp;in&amp;nbsp;the&amp;nbsp;object's&amp;nbsp;item&amp;nbsp;collection.&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;Mercury Class = WebMenu&lt;br&gt;Html Tag = UL&lt;br&gt;_xpath = //DIV[2]/HEADER[1]/NAV[1]/UL[@role="menu"][1]&lt;br&gt;|Name = &lt;br&gt;Html Id = navigation_cl56vnhz500012lmu6ujle7ea&lt;br&gt;first item = Testing&lt;br&gt;DHTML Class = sc-3o0n99-3 fIVbKv&lt;br&gt;acc_name = navbar&lt;br&gt;</Description>
+    <StartTime>2022-07-05 13:35:14</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Action1]]></ModuleName>
+          <FileName><![CDATA[Action1]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[Browser("Movie Tickets, Plays,").Page("Best Food Courts near").WebMenu("navbar").Select ""]]></Scripts>
+          <LineNo><![CDATA[16]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Best Food Courts near]]></Name>
+          </Object>
+          <Object>
+            <Type>WebMenu</Type>
+            <Name><![CDATA[navbar]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Cannot&nbsp;identify&nbsp;the&nbsp;specified&nbsp;item&nbsp;of&nbsp;the&nbsp;navbar&nbsp;object.&nbsp;Confirm&nbsp;that&nbsp;the&nbsp;specified&nbsp;item&nbsp;is&nbsp;included&nbsp;in&nbsp;the&nbsp;object's&nbsp;item&nbsp;collection.]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[UL]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>e15c91f6bb79461db991df505e030233</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Run Error</NodeType>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\2e6ab9fd-8886-4e7a-bea1-2babd74b27d7.jpeg" highlight="0,0,1243,654" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Movie Tickets, Plays,</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Local Browser&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2022-07-05 13:35:15</StartTime>
+    <Duration>23</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>6b9e3145ac3240cf9c9238c2c12d593d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>navbar</Name>
+    <ErrorText>Cannot identify the specified item of the navbar object. Confirm that the specified item is included in the object's item collection.</ErrorText>
+    <Description>Cannot&amp;nbsp;identify&amp;nbsp;the&amp;nbsp;specified&amp;nbsp;item&amp;nbsp;of&amp;nbsp;the&amp;nbsp;navbar&amp;nbsp;object.&amp;nbsp;Confirm&amp;nbsp;that&amp;nbsp;the&amp;nbsp;specified&amp;nbsp;item&amp;nbsp;is&amp;nbsp;included&amp;nbsp;in&amp;nbsp;the&amp;nbsp;object's&amp;nbsp;item&amp;nbsp;collection.&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;Mercury Class = WebMenu&lt;br&gt;Html Tag = UL&lt;br&gt;_xpath = //DIV[2]/HEADER[1]/NAV[1]/UL[@role="menu"][1]&lt;br&gt;|Name = &lt;br&gt;Html Id = navigation_cl56vnhz500012lmu6ujle7ea&lt;br&gt;first item = Testing&lt;br&gt;DHTML Class = sc-3o0n99-3 fIVbKv&lt;br&gt;acc_name = navbar&lt;br&gt;</Description>
+    <StartTime>2022-07-05 13:35:38</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Action1]]></ModuleName>
+          <FileName><![CDATA[Action1]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[Browser("Movie Tickets, Plays,").Page("Best Food Courts near").WebMenu("navbar").Select "KFC-DINING3.8DELIVERYKurla, MumbaiOrder NowDelivery in 54 minKFC3.8DINING3.9DELIVERYChakala, MumbaiCurrently not accepting ordersKFC3.4DINING3.7DELIVERYArrival Arena - L2, CSIA, Vile Parle East, MumbaiView all KFC outletsView all Delivery outletsView all Dining outlets"]]></Scripts>
+          <LineNo><![CDATA[17]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Best Food Courts near]]></Name>
+          </Object>
+          <Object>
+            <Type>WebMenu</Type>
+            <Name><![CDATA[navbar]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Cannot&nbsp;identify&nbsp;the&nbsp;specified&nbsp;item&nbsp;of&nbsp;the&nbsp;navbar&nbsp;object.&nbsp;Confirm&nbsp;that&nbsp;the&nbsp;specified&nbsp;item&nbsp;is&nbsp;included&nbsp;in&nbsp;the&nbsp;object's&nbsp;item&nbsp;collection.]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[UL]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>e15c91f6bb79461db991df505e030233</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Run Error</NodeType>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\6692f942-4f20-4cdf-8fe5-d2adebf6b453.jpeg" highlight="0,0,1243,654" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2022-07-05 13:35:44</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>0ad017775ac940caa308b85e06591a1d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Movie Tickets, Plays,</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Local Browser&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2022-07-05 13:35:38</StartTime>
+    <Duration>6</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>6b9e3145ac3240cf9c9238c2c12d593d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action1</Name>
+    <Description />
+    <StartTime>2022-07-05 13:34:44</StartTime>
+    <Duration>60</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>1457ed258e714dbfa35b1e40398e8848</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2022-07-05 13:34:43</StartTime>
+    <Duration>61</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>4d6ec7f0a32942e782be49752ad073f5</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>ZomatoDriver</Name>
+    <ToolName>Micro Focus UFT One</ToolName>
+    <ToolVersion>2021</ToolVersion>
+    <ToolVersionStringLiteral>2021</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2022-07-05 13:34:39</StartTime>
+    <Duration>65</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>179a6532f11747dd9e5b21d7245c2d3a</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+05:30:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>ALCHEMYCLOUD\user241</User>
+      <CpuInfo>Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>16383</TotalMemory>
+      <HostName>alchemycloud.co.in\UFT-40</HostName>
+      <OSInfo>Windows 10 1703 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res95</ResultName>
+    <RunStartTime>2022-07-05 13:34:39</RunStartTime>
+    <Timezone>+05:30:00</Timezone>
+    <OrchestrationToolName>Micro Focus UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>2021</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>2021</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Step">
+<Data>
+    <Name>Error in library file.</Name>
+    <ErrorText>Error in library file.</ErrorText>
+    <Description>&lt;BR/&gt;File: C:\Users\user241\Documents\zomato\function lib\User-lib.qfl&lt;BR/&gt;line (30): &amp;quot;Browser(&amp;quot;Movie Tickets, Plays,&amp;quot;).Page(&amp;quot;Best Bakeries near me&amp;quot;).WebMenu(&amp;quot;xpath:=//DIV\[2\]/HEADER\[1\]/NAV\[1\]/UL\[@role='menu'\&amp;quot;]\[1\]).Select &amp;quot;Monginis-DINING4.3DELIVERYNear Andheri East Station, MumbaiCurrently not accepting ordersView all outletsMonginis-DINING3.7DELIVERYNear Andheri East Station, MumbaiCurrently not accepting ordersMonginis-DINING4.0DELIVERYUlwe, Navi MumbaiDoes not deliver to your locationMonginis-DINING4.1DELIVERYThane East, ThaneDoes not deliver to your locationMonginis Cake-DINING3.6DELIVERYOshiwara, Andheri West, MumbaiCurrently not accepting orders&amp;quot;&amp;quot;.&lt;BR/&gt;Description: Invalid character</Description>
+    <StartTime>2022-07-05 12:24:44</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>3a65862144cd44349dbd7e295b77d5d7</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\d7ecc211-d459-44ae-a08f-c94e0841bc1e.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Run Error</Name>
+    <Description>General run error.</Description>
+    <StartTime>2022-07-05 12:24:53</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>1a25c478b74547a49bd165b9bfbb0518</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\7f9e7586-ef75-44bd-9bc3-b419454ee8a5.jpeg" />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>ZomatoDriver</Name>
+    <ToolName>Micro Focus UFT One</ToolName>
+    <ToolVersion>2021</ToolVersion>
+    <ToolVersionStringLiteral>2021</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2022-07-05 12:24:41</StartTime>
+    <Duration>12</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>de0f5a65445c442da599fdde781161e2</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+05:30:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>ALCHEMYCLOUD\user241</User>
+      <CpuInfo>Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>16383</TotalMemory>
+      <HostName>alchemycloud.co.in\UFT-40</HostName>
+      <OSInfo>Windows 10 1703 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res71</ResultName>
+    <RunStartTime>2022-07-05 12:24:41</RunStartTime>
+    <Timezone>+05:30:00</Timezone>
+    <OrchestrationToolName>Micro Focus UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>2021</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>2021</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

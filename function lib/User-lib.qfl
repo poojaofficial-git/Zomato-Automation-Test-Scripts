@@ -1,0 +1,301 @@
+﻿'------------------LOGIN------------------------
+Function Login()
+	
+
+Browser("Browser").Navigate(url)
+wait(3)
+Browser("Movie Tickets, Plays,").Page("Zomato").WebMenu("navbar").Select "Log in"
+wait(3)
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("xpath:=//SECTION/SECTION/DIV/DIV[@role='button' and normalize-space()='Continue with Google']").Click
+
+Browser("Movie Tickets, Plays,").Page("Zomato").Check CheckPoint("Zomato")
+
+Browser("Browser").Navigate(url)
+wait(3)
+Browser("Movie Tickets, Plays,").Page("Zomato").WebMenu("navbar").Select "Log in"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Continue with Google").Click
+Browser("Browser").Page("Sign in - Google Accounts").Link("Testing 123testingbms9@gmail.c").Click
+Browser("Browser").Page("Page").Sync
+Browser("Browser").Close
+
+
+End Function
+
+'----------------------RESTAURANT NEAR ME --------------------
+Function restNearMe()
+
+SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).WebButton(restBtn).Click
+Browser(browserObject).Page(pageObject).Link(bakerLink).Click
+Browser(browserObject).Page(pageObject).WebElement(bakerHighlight).Highlight
+result1 = Browser(browserObject).Page(pageObject).WebElement(bakerCheckObject).GetROProperty("Text")
+'actual1=DataTable.Value("Actual_Value","Test Data")
+'print(result1)
+
+	If StrComp(result1,DataTable.Value("Actual_Value","Test Data"))=0 Then
+		Reporter.ReportEvent micPass,"Restaurant Near Me " , "Pass"
+        Else
+        	Reporter.ReportEvent micFail,"Restaurant Near Me " , "Fail"
+    
+    	End if
+    	
+    	If StrComp(result1,DataTable.Value("Actual_Value","Test Data"))=0 Then
+        	restNearMe = "Pass"
+    	Else
+        	restNearMe = "Fail"
+    	End if
+ SystemUtil.CloseProcessByName "chrome.exe"
+ 
+End Function
+
+
+
+
+'---------------------------------CAFE ---------------------------------
+
+Function cafeNearMe()
+
+	SystemUtil.Run"chrome.exe"
+	Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+	Browser(browserObject).Page(pageObject).WebButton(restBtn).Click
+	Browser(browserObject).Page(pageObject).Link(cafeLinkObject).Click
+	wait(3)
+	Browser(browserObject).Page(pageObject).WebElement(openNowObject).Click
+	Browser(browserObject).Page(pageObject).WebElement(cafeCheckObject).Highlight
+	result2= Browser(browserObject).Page(pageObject).WebElement(cafeCheckObject).GetROProperty("Text")
+	'print(result2)
+	
+	If StrComp(result2,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"Cafe Near Me ", "Pass"
+	 Else
+	        Reporter.ReportEvent micFail,"Cafe Near Me ", "Fail"
+	 End if
+	 If StrComp(result2,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        cafeNearMe = "Pass"
+	  Else
+	        cafeNearMe = "Fail"
+	  End if
+	   SystemUtil.CloseProcessByName "chrome.exe"  
+
+End Function
+
+
+'---------------------------LOUNGE---------------------------------
+Function loungeNearMe()
+ SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).WebButton(restBtn).Click
+Browser(browserObject).Page(pageObject).Link(loungeLinkObject).Click
+Browser(browserObject).Page(pageObject).WebElement(loungeCheckObject).Highlight
+result3= Browser(browserObject).Page(pageObject).WebElement(loungeCheckObject).GetROProperty("Text")
+'print(result3)
+
+If StrComp(result3,DataTable.Value("Actual_Value","Test Data"))=0 Then
+        Reporter.ReportEvent micPass,"Lounge Near Me ", "Pass"
+ Else
+        Reporter.ReportEvent micFail,"Lounge Near Me ", "Fail"
+ End if
+ 
+ If StrComp(result3,DataTable.Value("Actual_Value","Test Data"))=0 Then
+        loungeNearMe= "Pass"
+ Else
+        loungeNearMe= "Fail"
+ End if
+SystemUtil.CloseProcessByName "chrome.exe"  
+
+End Function
+
+'-------------------CLAIM RESTAURANT------------------------------------
+
+Function claimRestaurant()
+ 	SystemUtil.Run"chrome.exe"
+	Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+	Browser(browserObject).Page(pageObject).Link(partnerUsObject).Click
+	Browser(browserObject).Page(pageObject).WebButton(claimBtn).Click
+	Browser(browserObject).Page(pageObject).WebEdit(cityVal).Set "Mumbai"
+	Browser(browserObject).Page(pageObject).WebElement(selectMum).Click
+	Browser(browserObject).Page(pageObject).WebEdit(claimSearch).Set "kfc"
+	Browser(browserObject).Page(pageObject).WebElement(selectKfcLoc).Click
+	Browser(browserObject).Page(pageObject).WebButton(claimOTP).Click
+	Browser(browserObject).Page(pageObject).WebElement(claimCheckObject).Highlight
+	result4= Browser(browserObject).Page(pageObject).WebElement(claimCheckObject).GetROProperty("Text")
+	print(result4)
+	 If StrComp(result4,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"Claim Restaurant " , "Pass"
+	    Else
+	        Reporter.ReportEvent micFail,"Claim Restaurant" , "Fail"
+	   End if
+	   
+	   If StrComp(result4,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        claimRestaurant = "Pass"
+	    Else
+	        claimRestaurant= "Fail"
+	   End if
+	SystemUtil.CloseProcessByName "chrome.exe"  
+	 End Function
+
+'-------------------------- Restaurant register claim/help option---------------------------------
+
+Function registerHelpOption()
+ SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).Link(partnerUsObject).Click
+Browser(browserObject).Page(pageObject).WebButton(registerClaimBtn).Highlight
+Browser(browserObject).Page(pageObject).WebElement(registerClaimElement).Click
+Browser(browserObject).Page(pageObject).Frame(FrameObject).WebEdit(helpTexBox).Set "Hi, There!"
+Browser(browserObject).Page(pageObject).Frame(FrameObject).WebButton(helpPlaceholder).Click
+result5 = Browser(browserObject).Page(pageObject).Frame(FrameObject).WebElement(helpButton).GetROProperty("Text")
+'print(result5)
+
+If StrComp(result5,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"Restaurant claim help " , "Pass"
+	    Else
+	        Reporter.ReportEvent micFail,"Restaurant claim help " , "Fail"
+	   End if
+	   
+If StrComp(result5,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        registerHelpOption= "Pass"
+	    Else
+	        registerHelpOption= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe"  	   
+End Function
+
+'--------------------Beverages near me-------------------------
+
+Function beveragesNearMe()
+SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).WebButton(restBtn).Click
+Browser(browserObject).Page(pageObject).Link(bevObject).Click
+Browser(browserObject).Page(pageObject).WebElement(filterObject).Click
+Browser(browserObject).Page(pageObject).WebElement(rateBevObject).Click
+Browser(browserObject).Page(pageObject).WebElement(acceptBevObject).Click
+wait(3)
+result6=Browser(browserObject).Page(pageObject).WebElement(rateBevObjectCheck).GetROProperty("Text")
+print(result6)
+
+If StrComp(result6,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"Beverages Near Me " , "Pass"
+	    Else
+	        Reporter.ReportEvent micFail,"Beverages Near Me " , "Fail"
+	   End if
+	   
+If StrComp(result6,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        beveragesNearMe= "Pass"
+	    Else
+	        beveragesNearMe= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe"  
+End Function
+
+'------------------------------------ZOMATO APP-----------------------------------------
+Function appsForYou()
+SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).Link(zoAppObject).Click
+Browser(browserObject).Page(pageObject).Link(zoAppObject1).Click
+Browser(browserObject).Page(pageObject).WebElement(zomato1Object).Highlight
+result7=Browser(browserObject).Page(pageObject).WebElement(zomato2Object).GetROProperty("Text")
+print(result7)
+If StrComp(result7,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"ZomatoApp1" , "Pass"
+	    Else
+	        Reporter.ReportEvent micFail,"ZomatoApp1" , "Fail"
+	   End if
+	   
+If StrComp(result7,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        appsForYou= "Pass"
+	    Else
+	        appsForYou= "Fail"
+	 End if
+SystemUtil.CloseProcessByName "chrome.exe"  
+End Function
+'-----------------------------------SANDWICH-------------------------------------------------
+Function orderOnlineSandwich()
+ SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).Image(onlineSandwich).Click
+Browser(browserObject).Page(pageObject).Link(onlineSandwich1).Click
+
+result8=Browser(browserObject).Page(pageObject).WebElement(onlineSandwich2).GetROProperty("Text")
+print(result8)
+If StrComp(result8,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"Select Sandwich" , "Pass"
+	    Else
+	        Reporter.ReportEvent micFail,"Select Sandwich" , "Fail"
+	   End if
+	   
+If StrComp(result8,DataTable.Value("Actual_Value","Test Data"))=0 Then
+        orderOnlineSandwich = "Pass"
+    Else
+        orderOnlineSandwich = "Fail"
+    End if
+ SystemUtil.CloseProcessByName "chrome.exe"
+End Function
+
+
+'--------------------CASUAL DINING NEAR ME ------------
+
+Function casualDiningNearMe()
+
+SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).WebButton(restBtn).Click
+Browser(browserObject).Page(pageObject).Link(diningObject).Click
+Browser(browserObject).Page(pageObject).Image(diningImgObject).Click
+Browser(browserObject).Page(pageObject).Link(diningLinkObject).Click
+Browser(browserObject).Page(pageObject).Link(onlineDiningLink).Click
+Browser(browserObject).Page(pageObject).WebElement(classicDiningObj).Click
+wait(3)
+Browser(browserObject).Page(pageObject).WebElement(comboDiningObj).Click
+wait(3)
+result9=Browser(browserObject).Page(pageObject).WebElement(checkkDiningObj).GetROProperty("Text")
+print(result9)
+
+
+ If StrComp(result9,DataTable.Value("Actual_Value","Test Data"))=0 Then
+        Reporter.ReportEvent micPass,"Dining Near Me" , "Pass"
+    Else
+        Reporter.ReportEvent micFail,"Dining Near Me" , "Fail"
+    End if
+    
+  If StrComp(result9,DataTable.Value("Actual_Value","Test Data"))=0 Then
+        casualDiningNearMe= "Pass"
+    Else
+        casualDiningNearMe= "Fail"
+    End if
+
+
+
+
+SystemUtil.CloseProcessByName "chrome.exe"  
+
+End Function
+'---------------------------------Zomato App Device Check ------------------------------
+
+Function zomatoAppDeviceCheck()
+
+SystemUtil.Run"chrome.exe"
+Browser(browserObject).Navigate(DataTable.Value("Url","Test Data"))
+Browser(browserObject).Page(pageObject).Link(zoAppObject).Click
+Browser(browserObject).Page(pageObject).Link(deviceObject).Click
+result10= Browser(browserObject).Page(pageObject).Link(deviceObjectCheck).GetROProperty("Text")
+print(result10)
+If StrComp(result10,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	        Reporter.ReportEvent micPass,"ZomatoAppDeviceCheck", "Pass"
+	    Else
+	        Reporter.ReportEvent micFail,"ZomatoAppDeviceCheck", "Fail"
+	   End if
+	   
+If StrComp(result10,DataTable.Value("Actual_Value","Test Data"))=0 Then
+	       zomatoAppDeviceCheck= "Pass"
+	    Else
+	       zomatoAppDeviceCheck= "Fail"
+	   End if
+
+SystemUtil.CloseProcessByName "chrome.exe"  	
+End Function
+
+

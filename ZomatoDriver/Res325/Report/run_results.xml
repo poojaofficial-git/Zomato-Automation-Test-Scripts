@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="Transaction">
+<Data>
+    <Name>TC_016</Name>
+    <Description>Transaction "TC_016" started.</Description>
+    <StartTime>2022-07-06 23:17:38</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>9cd503648fad4f6cb17046676b9b50f5</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Start Transaction</NodeType>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>SystemUtil.Run "chrome.exe",1</Name>
+    <StartTime>2022-07-06 23:17:38</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>074bb9a66e594c74b92ed24a2359d9bf</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Movie Tickets, Plays,.Navigate</Name>
+    <Description>Navigate to https://www.zomato.com/&lt;br&gt;Target Frame: _top&lt;br&gt;Post Data: &lt;br&gt;HTTP Headers: </Description>
+    <StartTime>2022-07-06 23:17:40</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+        </Path>
+        <Operation>Navigate</Operation>
+        <OperationData><![CDATA[Navigate to https://www.zomato.com/<br>Target Frame: _top<br>Post Data: <br>HTTP Headers: ]]></OperationData>
+      </TestObject>
+      <IconKey>49baf884e5d14d95834d128f258b313b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Apps For You_2.Click</Name>
+    <Description />
+    <StartTime>2022-07-06 23:17:44</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Link</Type>
+            <Name><![CDATA[Apps For You_2]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[xpath]]></Name>
+            <Value><![CDATA[//DIV/NAV/A[normalize-space()="Apps For You"]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Apps For You]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[A]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>7c04db9e991b4f2db9e770178bd634bd</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Zomato</Name>
+    <Description>Page</Description>
+    <StartTime>2022-07-06 23:17:44</StartTime>
+    <Duration>3</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Page]]></OperationData>
+      </TestObject>
+      <IconKey>2e4c5525a5054195a9059af4524c78bc</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Zomato.Click</Name>
+    <Description />
+    <StartTime>2022-07-06 23:17:47</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato Restaurant Partner]]></Name>
+          </Object>
+          <Object>
+            <Type>Link</Type>
+            <Name><![CDATA[Zomato]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[xpath]]></Name>
+            <Value><![CDATA[//DIV/DIV/DIV/C-WIZ/DIV/DIV/DIV/DIV/DIV/A[normalize-space()="Zomato"]]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Zomato]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[A]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>7c04db9e991b4f2db9e770178bd634bd</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Zomato Restaurant Partner</Name>
+    <Description>Page</Description>
+    <StartTime>2022-07-06 23:17:47</StartTime>
+    <Duration>1</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Zomato Restaurant Partner]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Page]]></OperationData>
+      </TestObject>
+      <IconKey>2e4c5525a5054195a9059af4524c78bc</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Context">
+<ReportNode type="Checkpoint">
+<Data>
+    <Name>"Image"</Name>
+    <Description> </Description>
+    <StartTime>2022-07-06 23:17:48</StartTime>
+    <Result>Passed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Android Apps by Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Image</Type>
+            <Name><![CDATA[Image]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[ ]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[image type]]></Name>
+            <Value><![CDATA[Plain Image]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[IMG]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[alt]]></Name>
+            <Value><![CDATA[Image]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <Checkpoint>
+        <Type>Standard Checkpoint</Type>
+        <CheckpointSubType>Std Image CheckPoint</CheckpointSubType>
+        <Properties>
+          <Property>
+            <ImageChkPointPropertyName><![CDATA[src]]></ImageChkPointPropertyName>
+            <ImageChkPointPropertyActualValue><![CDATA[https://play-lh.googleusercontent.com/mqoHOKWOtsMWzWnx4tNaneSkse63w9hUwsa9UF72zHw5rOcCxF7xs1cqTsuTQm2_veFG=w3840-h2160-rw]]></ImageChkPointPropertyActualValue>
+            <ImageChkPointPropertyExpectedValue><![CDATA[https://play-lh.googleusercontent.com/mqoHOKWOtsMWzWnx4tNaneSkse63w9hUwsa9UF72zHw5rOcCxF7xs1cqTsuTQm2_veFG=w3840-h2160-rw]]></ImageChkPointPropertyExpectedValue>
+            <ImageChkPointPropertyCheckPass><![CDATA[True]]></ImageChkPointPropertyCheckPass>
+            <ImageChkPointPropertyIsRegExp><![CDATA[False]]></ImageChkPointPropertyIsRegExp>
+            <ImageChkPointPropertyIsUseFormula><![CDATA[False]]></ImageChkPointPropertyIsUseFormula>
+          </Property>
+          <Property>
+            <ImageChkPointPropertyName><![CDATA[innertext]]></ImageChkPointPropertyName>
+            <ImageChkPointPropertyActualValue><![CDATA[]]></ImageChkPointPropertyActualValue>
+            <ImageChkPointPropertyExpectedValue><![CDATA[]]></ImageChkPointPropertyExpectedValue>
+            <ImageChkPointPropertyCheckPass><![CDATA[True]]></ImageChkPointPropertyCheckPass>
+            <ImageChkPointPropertyIsRegExp><![CDATA[False]]></ImageChkPointPropertyIsRegExp>
+            <ImageChkPointPropertyIsUseFormula><![CDATA[False]]></ImageChkPointPropertyIsUseFormula>
+          </Property>
+          <Property>
+            <ImageChkPointPropertyName><![CDATA[html tag]]></ImageChkPointPropertyName>
+            <ImageChkPointPropertyActualValue><![CDATA[IMG]]></ImageChkPointPropertyActualValue>
+            <ImageChkPointPropertyExpectedValue><![CDATA[IMG]]></ImageChkPointPropertyExpectedValue>
+            <ImageChkPointPropertyCheckPass><![CDATA[True]]></ImageChkPointPropertyCheckPass>
+            <ImageChkPointPropertyIsRegExp><![CDATA[False]]></ImageChkPointPropertyIsRegExp>
+            <ImageChkPointPropertyIsUseFormula><![CDATA[False]]></ImageChkPointPropertyIsUseFormula>
+          </Property>
+          <Property>
+            <ImageChkPointPropertyName><![CDATA[href]]></ImageChkPointPropertyName>
+            <ImageChkPointPropertyActualValue><![CDATA[]]></ImageChkPointPropertyActualValue>
+            <ImageChkPointPropertyExpectedValue><![CDATA[]]></ImageChkPointPropertyExpectedValue>
+            <ImageChkPointPropertyCheckPass><![CDATA[True]]></ImageChkPointPropertyCheckPass>
+            <ImageChkPointPropertyIsRegExp><![CDATA[False]]></ImageChkPointPropertyIsRegExp>
+            <ImageChkPointPropertyIsUseFormula><![CDATA[False]]></ImageChkPointPropertyIsUseFormula>
+          </Property>
+        </Properties>
+      </Checkpoint>
+      <IconKey>ed053a230eff467b8f259cda9dda2c7d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Transaction">
+<Data>
+    <Name>TC_016</Name>
+    <Description>Transaction "TC_016" ended with "Pass" status (Total Duration: 10.5585 sec Wasted Time: 1.7664 sec).</Description>
+    <StartTime>2022-07-06 23:17:48</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>b910b6a689fb47c08a57c302c57a2624</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>End Transaction</NodeType>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Image</Name>
+    <Description>Image</Description>
+    <StartTime>2022-07-06 23:17:48</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Android Apps by Zomato]]></Name>
+          </Object>
+          <Object>
+            <Type>Image</Type>
+            <Name><![CDATA[Image]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Image]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[image type]]></Name>
+            <Value><![CDATA[Plain Image]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[html tag]]></Name>
+            <Value><![CDATA[IMG]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[alt]]></Name>
+            <Value><![CDATA[Image]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ed053a230eff467b8f259cda9dda2c7d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Android Apps by Zomato</Name>
+    <Description>Page</Description>
+    <StartTime>2022-07-06 23:17:48</StartTime>
+    <Duration>1</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+          <Object>
+            <Type>Page</Type>
+            <Name><![CDATA[Android Apps by Zomato]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[Page]]></OperationData>
+      </TestObject>
+      <IconKey>2e4c5525a5054195a9059af4524c78bc</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Movie Tickets, Plays,</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;Local Browser&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2022-07-06 23:17:40</StartTime>
+    <Duration>9</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Browser</Type>
+            <Name><![CDATA[Movie Tickets, Plays,]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; ">Local Browser</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>49baf884e5d14d95834d128f258b313b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action1</Name>
+    <Description />
+    <StartTime>2022-07-06 23:17:36</StartTime>
+    <Duration>13</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>16ecb1ff6de9445b80193e97aa7dd4a0</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2022-07-06 23:17:35</StartTime>
+    <Duration>14</Duration>
+    <Result>Passed</Result>
+    <Extension>
+      <IconKey>06f1537e8c3446d9a324a345aa1907e8</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>ZomatoDriver</Name>
+    <ToolName>Micro Focus UFT One</ToolName>
+    <ToolVersion>2021</ToolVersion>
+    <ToolVersionStringLiteral>2021</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2022-07-06 23:17:31</StartTime>
+    <Duration>18</Duration>
+    <Result>Passed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>d214d3c1924d4785865df078879cc67a</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>+05:30:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>ALCHEMYCLOUD\user241</User>
+      <CpuInfo>Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>16383</TotalMemory>
+      <HostName>alchemycloud.co.in\UFT-40</HostName>
+      <OSInfo>Windows 10 1703 (x64)</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res325</ResultName>
+    <RunStartTime>2022-07-06 23:17:31</RunStartTime>
+    <Timezone>+05:30:00</Timezone>
+    <OrchestrationToolName>Micro Focus UFT One</OrchestrationToolName>
+    <OrchestrationToolVersion>2021</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>2021</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>

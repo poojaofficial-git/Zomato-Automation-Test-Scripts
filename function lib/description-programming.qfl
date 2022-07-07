@@ -1,0 +1,203 @@
+﻿'SearchClaim = "Claim your restaurant instantly by OTP verification"
+'Test6r="Beverages Near Me"
+'a2="Please enter your email id"
+
+
+ Dim url
+ Dim result1,actual1,result2,actual2,result3,actual3,result4,actual4,result5,actual5
+ Dim result6,actual6,result7,actual7,result8,actual8,result9,actual9,result10,actual10
+
+
+ 'url="https://www.zomato.com/"
+ 'actual1 = "Top rated Bakeries near me"
+' actual2 = "Cafés in Amrut Nagar, Chakala, Andheri East, Mumbai"
+' actual3="Lounges Near Me"
+ 'actual4="Claim ownership of your restaurant"
+ 'actual5="Zomato Support"
+' actual6="Rating: High to Lowcross"
+ 'actual7="Zomato"
+ 'actual8= "Sandwich Restaurants"
+ 'actual9="Online ordering is only supported on the mobile app"
+ 'actual10="You don't have any devices"
+ '--------------------------------------------------Object Repository Variables ---------------------------------------------------------------------------------
+ 
+ Dim obj1,obj2,obj3,obj4,obj5,obj6
+ Dim obja1,obja2,obja3,obja5,obja6
+obja1="Top rated Cafés near me"
+obja2="Top rated Bakeries near me"
+obja3="1 Selected"
+obja4="Distance"
+obja5="Claim ownership of your restaurant" 
+obja6="Zomato"
+obja7="Error: You haven't accessed the Google Play Store app on your device with this email account"
+obja8="Subway"
+obja9="Bakeries in Amrut Nagar, Chakala, Andheri East, Mumbai"
+obja10="Popularity"
+
+
+
+'-------------------- RESTAURANT NEAR ME--------------------
+
+Set browserObject = Description.Create
+browserObject("creationtime").value ="0"
+
+Set pageObject = Description.Create
+pageObject("micclass").value ="Page"
+
+Set restBtn = Description.Create
+restBtn("name").value ="Popular restaurant types near mechevron-down"
+
+Set bakerLink = Description.Create
+bakerLink("name").value ="Bakeries near me"
+
+Set bakerHighlight = Description.Create
+bakerHighlight("innerhtml").value ="Top rated Bakeries near me"
+
+Set bakerCheckObject = Description.Create
+bakerCheckObject ("innerhtml").value ="Top rated Bakeries near me"
+
+'--------------------CAFE NEAR ME ------------------------------------
+Set cafeLinkObject = Description.Create
+cafeLinkObject("name").value ="Cafés near me"
+
+Set openNowObject = Description.Create
+openNowObject("innerhtml").value ="Open Now"
+
+Set cafeCheckObject = Description.Create
+cafeCheckObject ("innerhtml").value ="Cafés in Amrut Nagar, Chakala, Andheri East, Mumbai"
+
+'---------------------LOUNGE NEAR ME -------------------------------
+Set loungeLinkObject = Description.Create
+loungeLinkObject("xpath").value ="//DIV/SECTION/DIV/SECTION/DIV/A[normalize-space()='Lounges near me']"
+
+Set loungeCheckObject = Description.Create
+loungeCheckObject("innerhtml").value ="Lounges Near Me"
+
+
+'------------------------PARTNER WITH US MODULE ----restaurant already listed---------
+
+Set partnerUsObject = Description.Create
+partnerUsObject("url").value ="https://www\.zomato\.com/partner_with_us"
+
+Set claimBtn = Description.Create
+claimBtn("xpath").value ="//BUTTON[@id='diy-claim-now']"
+
+Set cityVal = Description.Create
+cityVal("value").value ="Delhi NCR"
+
+Set selectMum = Description.Create
+selectMum("acc_name").value ="Mumbai"
+
+Set claimSearch = Description.Create
+claimSearch("placeholder").value ="Search for your restaurant, eg\. Greenland Cafe"
+
+Set selectKfcLoc = Description.Create
+selectKfcLoc("innerhtml").value ="Inside Airport, International Departure, Level 4, CSIA Airport, Sahar Road, Near Vile Parle East, Mumbai"
+
+Set claimOTP = Description.Create
+claimOTP("name").value ="SEND OTP"
+
+Set claimCheckObject = Description.Create
+claimCheckObject("innerhtml").value ="Claim ownership of your restaurant"
+
+
+'-------------------------- Restaurant register claim/help option---------------------------------
+
+Set registerClaimBtn = Description.Create
+registerClaimBtn("name").value ="Register your restaurant"
+
+Set registerClaimElement = Description.Create
+registerClaimElement("xpath").value ="//DIV[@id='root']/DIV[2]/DIV[1]"
+
+Set FrameObject = Description.Create
+FrameObject("html tag").value ="IFRAME"
+
+Set helpTexBox = Description.Create
+helpTexBox("xpath").value ="//DIV[2]/DIV[1]/FORM[1]/DIV[2]/DIV[2]/TEXTAREA[1]"
+
+Set helpPlaceholder = Description.Create
+helpPlaceholder("xpath").value ="//DIV/DIV/FORM/DIV[normalize-space()='Hi, There!']/BUTTON[1]"
+
+Set helpButton = Description.Create
+helpButton("xpath").value ="//DIV/DIV[normalize-space()='Zomato Support']/DIV[2]/DIV[1]"
+
+'-------------------------BEVERAGES NEAR ME-----------
+
+Set bevObject = Description.Create
+bevObject("url").value ="https://www.zomato.com/beverage-shops-near-me"
+
+Set filterObject = Description.Create
+filterObject("xpath").value ="//DIV[@id='root']/DIV[1]/DIV[5]/DIV[1]/DIV[1]/DIV[1]/DIV[1]"
+
+Set rateBevObject = Description.Create
+rateBevObject("xpath").value ="//SECTION/LABEL/SPAN[normalize-space()='Rating: High to Low']"
+
+Set acceptBevObject = Description.Create
+acceptBevObject("xpath").value ="//BUTTON[@role='button' and normalize-space()='Apply']/SPAN[1]"
+
+Set rateBevObjectCheck = Description.Create
+rateBevObjectCheck("xpath").value ="//DIV[@id='root']/DIV[1]/DIV[5]/DIV[1]/DIV[1]/DIV[3]/DIV[1]"
+
+'------------------------------------Apps For You-----------------------------------------
+
+Set zoAppObject = Description.Create
+zoAppObject("url").value ="https://play\.google\.com/store/apps/details\?id=com\.application\.services\.partner&hl=en_IN&gl=US"
+
+Set zoAppObject1 = Description.Create
+zoAppObject1("url").value ="https://play\.google\.com/store/apps/dev\?id=7812834815367511165"
+
+Set zomato1Object = Description.Create
+zomato1Object("xpath").value ="//DIV[normalize-space()='Zomato']/DIV[1]/DIV[1]"
+
+Set zomato2Object = Description.Create
+zomato2Object("xpath").value ="//DIV[normalize-space()='Zomato']/DIV[1]/DIV[1]"
+
+'--------------------- SANDWICH-------------------
+
+Set onlineSandwich = Description.Create
+onlineSandwich("url").value ="https://www\.zomato\.com/mumbai/order-food-online\?delivery_subzone=10363"
+
+Set onlineSandwich1 = Description.Create
+onlineSandwich1("url").value ="https://www\.zomato\.com/mumbai/chakala-restaurants\?place_name=Gundavali%2C\+Andheri\+East%2C\+Mumbai&dishv2_id=64088"
+
+Set onlineSandwich2 = Description.Create
+onlineSandwich2("xpath").value ="//DIV[3]/DIV[1]/DIV[1]/H1[1]"
+
+'--------------------------------------CASUAL DINING NEAR ME--------------------------------
+
+Set diningObject = Description.Create
+diningObject("url").value ="https://www\.zomato\.com/casual-dining-near-me"
+
+Set diningImgObject = Description.Create
+diningImgObject("url").value ="https://www\.zomato\.com/mumbai/1522-bar-and-kitchen-mahakali/info"
+
+Set diningLinkObject = Description.Create
+diningLinkObject("url").value ="https://www\.zomato\.com/mumbai/1522-bar-and-kitchen-mahakali/book"
+
+Set onlineDiningLink = Description.Create
+onlineDiningLink("xpath").value ="//DIV[@role='tab']/H2/A[normalize-space()='Order Online']"
+
+Set classicDiningObj = Description.Create
+classicDiningObj("xpath").value ="//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/SECTION[1]/SECTION[1]/P[2]"
+
+Set comboDiningObj = Description.Create
+comboDiningObj("xpath").value ="//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/SECTION[1]/SECTION[1]/P[3]"
+
+Set checkkDiningObj = Description.Create
+checkkDiningObj("xpath").value ="//DIV[@id='root']/DIV[1]/MAIN[1]/DIV[1]/SECTION[4]/SECTION[1]/SECTION[2]/DIV[@role='button'][1]/DIV[1]/DIV[1]"
+
+
+'---------------------------------Zomato App Device Check ------------------------------
+
+Set deviceObject = Description.Create
+deviceObject("url").value ="https://support\.google\.com/googleplay/\?p=remote_install_error"
+
+Set deviceObjectCheck = Description.Create
+deviceObjectCheck("xpath").value ="//DIV[1]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/SPAN[1]/A[1]"
+
+
+
+
+
+
+

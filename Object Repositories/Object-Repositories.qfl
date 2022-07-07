@@ -1,0 +1,216 @@
+﻿
+
+Function ObjR1
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Popular restaurant types_5").Click
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Cafés near me_3").Click
+'Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").Check CheckPoint("Best Cafés near me | Zomato_2")
+Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebElement("Top rated Cafés near me").Highlight
+wait(3)
+obj1=Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebElement("Top rated Cafés near me").GetROProperty("Text")
+print(obj1)
+  If StrComp(obj1,obja1)=0 Then
+	        ObjR1 = "Pass"
+	    Else
+	        ObjR1= "Fail"
+	   End if
+
+SystemUtil.CloseProcessByName "chrome.exe" 
+End Function
+
+
+
+Function ObjR2()
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Popular restaurant types_3").Click
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Bakeries near me_3").Click
+'Browser("Movie Tickets, Plays,").Page("Best Bakeries near me").Check CheckPoint("Best Bakeries near me | Zomato_3")
+Browser("Movie Tickets, Plays,").Page("Best Bakeries near me").WebElement("Top rated Bakeries near_2").Highlight
+wait(3)
+obj2=Browser("Movie Tickets, Plays,").Page("Best Bakeries near me").WebElement("Top rated Bakeries near_2").GetROProperty("Text")
+ If StrComp(obj2,obja2)=0 Then
+	        ObjR2 = "Pass"
+	    Else
+	        ObjR2= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe" 
+	
+End Function
+
+
+Function ObjR3()
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Popular restaurant types_4").Click
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Cafés near me_2").Click
+wait(8)
+Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebElement("2Filters").Click
+wait(3)
+Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebTabStrip("Sort byPopularityCuisinesRatin").Select "More filters"
+Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebCheckBox("Wifi").Set "ON"
+Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebElement("1 Selected").Highlight
+wait(3)
+'Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").Check CheckPoint("Best Cafés near me | Zomato")
+obj3=Browser("Movie Tickets, Plays,").Page("Best Cafés near me | Zomato").WebElement("1 Selected").GetROProperty("Text")
+
+ If StrComp(obj3,obja3)=0 Then
+	        ObjR3 = "Pass"
+	    Else
+	        ObjR3= "Fail"
+	   End if
+
+SystemUtil.CloseProcessByName "chrome.exe" 
+End Function
+
+
+Function ObjR4
+
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Popular restaurant types_6").Click
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Lounges near me_2").Click
+Browser("Movie Tickets, Plays,").Page("Best Lounges near me |").WebElement("Open Now").Click
+Browser("Movie Tickets, Plays,").Page("Amrut Nagar, Chakala,").WebElement("2Filters").Click
+Browser("Movie Tickets, Plays,").Page("Amrut Nagar, Chakala,").WebRadioGroup("sort_modal").Select "distance_asc"
+Browser("Movie Tickets, Plays,").Page("Amrut Nagar, Chakala,").WebElement("Distance").Highlight
+'Browser("Movie Tickets, Plays,").Page("Amrut Nagar, Chakala,").Check CheckPoint("Lounges in Amrut Nagar, Chakala, Andheri East, Mumbai - Zomato_2")
+obj4=Browser("Movie Tickets, Plays,").Page("Amrut Nagar, Chakala,").WebElement("Distance_3").GetROProperty("Text")
+
+ If StrComp(obj4,obja4)=0 Then
+	        ObjR4 = "Pass"
+
+	    Else
+	        ObjR4= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe" 
+End Function
+
+
+
+Function ObjR5
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Partner With Us_2").Click
+Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato").WebButton("diy-claim-now_2").Click
+Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_2").WebEdit("Delhi NCR").Set "Mumbai"
+Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_2").WebElement("Mumbai_2").Click
+Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_2").WebEdit("Search for your restaurant,").Set "kfc"
+wait(3)
+Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_2").WebElement("Inside Airport, International_2").Click
+wait(3)
+Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_3").WebElement("Claim ownership of your_2").Highlight
+wait(3)
+'Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_3").Check CheckPoint("Add a restaurant - Zomato_10")
+obj5=Browser("Movie Tickets, Plays,").Page("Add a restaurant - Zomato_3").WebElement("Claim ownership of your_2").GetROProperty("Text")
+ If StrComp(obj5,obja5)=0 Then
+	        ObjR5 = "Pass"
+
+	    Else
+	        ObjR5= "Fail"
+	   End if
+
+SystemUtil.CloseProcessByName "chrome.exe" 
+End Function
+
+
+
+Function ObjR6()
+
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Apps For You_2").Click
+Browser("Movie Tickets, Plays,").Page("Zomato Restaurant Partner").Link("Zomato").Click
+wait(3)
+'Browser("Movie Tickets, Plays,").Page("Android Apps by Zomato").WebElement("Zomato_3").Check CheckPoint("Zomato Text")
+obj6=Browser("Movie Tickets, Plays,").Page("Android Apps by Zomato").WebElement("Zomato_3").GetROProperty("Text")
+ If StrComp(obj6,obja6)=0 Then
+	        ObjR6 = "Pass"
+
+	    Else
+	        ObjR6= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe" 
+
+End Function
+
+
+Function ObjR7()
+
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"	
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Apps For You_3").Click
+Browser("Movie Tickets, Plays,").Page("Zomato Restaurant Partner").Link("You don't have any devices_2").Click
+'Browser("Browser").Page("Error: You haven't accessed").Check CheckPoint("Error: You haven't accessed the Google Play Store app on your device with this email account - Google Play Help_3")
+obj7=Browser("Browser").Page("Error: You haven't accessed").WebElement("Error: You haven't accessed").GetROProperty("Text")
+If StrComp(obj7,obja7)=0 Then
+	        ObjR7 = "Pass"
+
+	    Else
+	        ObjR7= "Fail"
+	   End if
+	   
+SystemUtil.CloseProcessByName "chrome.exe" 
+End Function
+
+Function ObjR8()
+
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").Image("Order Online").Click
+Browser("Movie Tickets, Plays,").Page("Order food online in Amrut").Image("Subway").Click
+Browser("Movie Tickets, Plays,").Page("Subway, Goregaon East").Link("Reviews").Click
+Browser("Movie Tickets, Plays,").Page("Subway reviews, Chakala,").WebElement("Subway_2").Highlight
+obj8=Browser("Movie Tickets, Plays,").Page("Subway reviews, Chakala,").WebElement("Subway_2").GetROProperty("Text")
+'Browser("Movie Tickets, Plays,").Page("Subway reviews, Chakala,").WebElement("Subway").Check CheckPoint("Subway")
+If StrComp(obj8,obja8)=0 Then
+	        ObjR8 = "Pass"
+
+	    Else
+	        ObjR8= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe" 
+End  Function
+
+
+ 
+ Function ObjR9()
+ 
+SystemUtil.Run"chrome.exe"
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Popular restaurant types_8").Click
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Bakeries near me_4").Click
+Browser("Movie Tickets, Plays,").Page("Best Bakeries near me").WebElement("Open Now").Click
+'Browser("Movie Tickets, Plays,").Page("Bakeries in Amrut Nagar,").Check CheckPoint("Bakeries in Amrut Nagar, Chakala, Andheri East, Mumbai - Zomato")
+obj9=Browser("Movie Tickets, Plays,").Page("Bakeries in Amrut Nagar,").WebElement("Bakeries in Amrut Nagar,").GetROProperty("text")
+If StrComp(obj9,obja9)=0 Then
+	        ObjR9 = "Pass"
+
+	    Else
+	        ObjR9= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe" 
+ End Function
+ 
+ Function ObjR10()
+ 
+SystemUtil.Run"chrome.exe" 
+Browser("Movie Tickets, Plays,").Navigate "https://www.zomato.com/"
+Browser("Movie Tickets, Plays,").Page("Zomato").WebButton("Popular restaurant types_7").Click
+Browser("Movie Tickets, Plays,").Page("Zomato").Link("Casual Dining near me_2").Click
+Browser("Movie Tickets, Plays,").Page("Best Casual Dining near").WebButton("Top Restaurant Chains").Click
+Browser("Movie Tickets, Plays,").Page("Best Casual Dining near").Link("KFC").Click
+Browser("Movie Tickets, Plays,").Page("KFC | Order Online from").WebElement("2Filters").Click
+Browser("Movie Tickets, Plays,").Page("KFC | Order Online from").WebRadioGroup("sort_modal").Select "popularity_desc"
+
+'Browser("Movie Tickets, Plays,").Page("KFC | Order Online from").Check CheckPoint("KFC | Order Online from KFC in Chakala")
+obj10=Browser("Movie Tickets, Plays,").Page("KFC | Order Online from").WebElement("Popularity").GetROProperty("Text")
+If StrComp(obj10,obja10)=0 Then
+	        ObjR10 = "Pass"
+
+	    Else
+	        ObjR10= "Fail"
+	   End if
+SystemUtil.CloseProcessByName "chrome.exe" 
+ End Function
